@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.lbl_Login = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox_logo1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tb_email = new System.Windows.Forms.TextBox();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.tb_password = new System.Windows.Forms.TextBox();
+            this.btn_login = new System.Windows.Forms.Button();
+            this.lbl_members = new System.Windows.Forms.Label();
+            this.pb_logo1 = new System.Windows.Forms.PictureBox();
+            this.pb_image = new System.Windows.Forms.PictureBox();
+            this.pb_redrectangle = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_redrectangle)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Login
@@ -54,100 +54,100 @@
             this.lbl_Login.TabIndex = 1;
             this.lbl_Login.Text = "Log In";
             // 
-            // textBox1
+            // tb_email
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(48, 323);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(565, 38);
-            this.textBox1.TabIndex = 2;
+            this.tb_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.Location = new System.Drawing.Point(48, 323);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(565, 38);
+            this.tb_email.TabIndex = 2;
             // 
-            // label2
+            // lbl_email
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 271);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 38);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Email";
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.Font = new System.Drawing.Font("Segoe UI Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.Location = new System.Drawing.Point(51, 271);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(80, 38);
+            this.lbl_email.TabIndex = 5;
+            this.lbl_email.Text = "Email";
             // 
-            // label3
+            // lbl_password
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(51, 388);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 38);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Password";
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Font = new System.Drawing.Font("Segoe UI Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.Location = new System.Drawing.Point(51, 388);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(126, 38);
+            this.lbl_password.TabIndex = 7;
+            this.lbl_password.Text = "Password";
             // 
-            // textBox2
+            // tb_password
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(48, 440);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(565, 38);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.tb_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_password.Location = new System.Drawing.Point(48, 440);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(565, 38);
+            this.tb_password.TabIndex = 6;
+            this.tb_password.UseSystemPasswordChar = true;
             // 
-            // button1
+            // btn_login
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(241, 536);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 46);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "LOG IN";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_login.BackColor = System.Drawing.Color.Maroon;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_login.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_login.Location = new System.Drawing.Point(241, 536);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(150, 46);
+            this.btn_login.TabIndex = 8;
+            this.btn_login.Text = "LOG IN";
+            this.btn_login.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lbl_members
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Maroon;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(986, 691);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 140);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Made by:\r\n\r\nBalatbat, Ellaine Rose\r\nTan, Samantha Faith\r\nYolola, Lenar Andrei\r\n";
+            this.lbl_members.AutoSize = true;
+            this.lbl_members.BackColor = System.Drawing.Color.Maroon;
+            this.lbl_members.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_members.ForeColor = System.Drawing.Color.White;
+            this.lbl_members.Location = new System.Drawing.Point(986, 691);
+            this.lbl_members.Name = "lbl_members";
+            this.lbl_members.Size = new System.Drawing.Size(195, 140);
+            this.lbl_members.TabIndex = 11;
+            this.lbl_members.Text = "Made by:\r\n\r\nBalatbat, Ellaine Rose\r\nTan, Samantha Faith\r\nYolola, Lenar Andrei\r\n";
             // 
-            // pictureBox_logo1
+            // pb_logo1
             // 
-            this.pictureBox_logo1.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox_logo1.Image = global::Library_Management_System__Final_Project_.Properties.Resources.logo_no_background1;
-            this.pictureBox_logo1.Location = new System.Drawing.Point(1051, 60);
-            this.pictureBox_logo1.Name = "pictureBox_logo1";
-            this.pictureBox_logo1.Size = new System.Drawing.Size(296, 66);
-            this.pictureBox_logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_logo1.TabIndex = 0;
-            this.pictureBox_logo1.TabStop = false;
+            this.pb_logo1.BackColor = System.Drawing.Color.Maroon;
+            this.pb_logo1.Image = global::Library_Management_System__Final_Project_.Properties.Resources.logo_no_background1;
+            this.pb_logo1.Location = new System.Drawing.Point(1051, 60);
+            this.pb_logo1.Name = "pb_logo1";
+            this.pb_logo1.Size = new System.Drawing.Size(296, 66);
+            this.pb_logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_logo1.TabIndex = 0;
+            this.pb_logo1.TabStop = false;
             // 
-            // pictureBox2
+            // pb_image
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox2.Image = global::Library_Management_System__Final_Project_.Properties.Resources.Untitled_design__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(1070, 266);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(268, 251);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
+            this.pb_image.BackColor = System.Drawing.Color.Maroon;
+            this.pb_image.Image = global::Library_Management_System__Final_Project_.Properties.Resources.Untitled_design__1_;
+            this.pb_image.Location = new System.Drawing.Point(1070, 266);
+            this.pb_image.Name = "pb_image";
+            this.pb_image.Size = new System.Drawing.Size(268, 251);
+            this.pb_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_image.TabIndex = 10;
+            this.pb_image.TabStop = false;
             // 
-            // pictureBox1
+            // pb_redrectangle
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox1.Location = new System.Drawing.Point(962, -13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(464, 973);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pb_redrectangle.BackColor = System.Drawing.Color.Maroon;
+            this.pb_redrectangle.Location = new System.Drawing.Point(962, -13);
+            this.pb_redrectangle.Name = "pb_redrectangle";
+            this.pb_redrectangle.Size = new System.Drawing.Size(464, 973);
+            this.pb_redrectangle.TabIndex = 9;
+            this.pb_redrectangle.TabStop = false;
             // 
             // form_LogIn
             // 
@@ -155,23 +155,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1422, 853);
-            this.Controls.Add(this.pictureBox_logo1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pb_logo1);
+            this.Controls.Add(this.lbl_members);
+            this.Controls.Add(this.pb_image);
+            this.Controls.Add(this.pb_redrectangle);
+            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.lbl_password);
+            this.Controls.Add(this.tb_password);
+            this.Controls.Add(this.lbl_email);
+            this.Controls.Add(this.tb_email);
             this.Controls.Add(this.lbl_Login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_redrectangle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,16 +179,16 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox_logo1;
+        private System.Windows.Forms.PictureBox pb_logo1;
         private System.Windows.Forms.Label lbl_Login;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label lbl_password;
+        private System.Windows.Forms.TextBox tb_password;
+        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.PictureBox pb_redrectangle;
+        private System.Windows.Forms.PictureBox pb_image;
+        private System.Windows.Forms.Label lbl_members;
     }
 }
 
