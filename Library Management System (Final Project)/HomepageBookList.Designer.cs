@@ -217,7 +217,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(1136, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(304, 1000);
+            this.panel2.Size = new System.Drawing.Size(304, 900);
             this.panel2.TabIndex = 13;
             // 
             // txt_ISBN
@@ -530,7 +530,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 1000);
+            this.panel3.Size = new System.Drawing.Size(220, 900);
             this.panel3.TabIndex = 32;
             // 
             // pictureBox1
@@ -596,7 +596,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1440, 1000);
+            this.ClientSize = new System.Drawing.Size(1440, 900);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.label21);
