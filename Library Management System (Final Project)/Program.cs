@@ -18,7 +18,7 @@ namespace Library_Management_System__Final_Project_
                 SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form_LogIn());
+            Application.Run(new Form_Homepage());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

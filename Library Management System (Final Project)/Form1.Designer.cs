@@ -30,7 +30,7 @@
         {
             this.lbl_Login = new System.Windows.Forms.Label();
             this.tb_email = new System.Windows.Forms.TextBox();
-            this.lbl_email = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
             this.tb_password = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
@@ -63,15 +63,15 @@
             this.tb_email.Size = new System.Drawing.Size(565, 38);
             this.tb_email.TabIndex = 2;
             // 
-            // lbl_email
+            // lbl_username
             // 
-            this.lbl_email.AutoSize = true;
-            this.lbl_email.Font = new System.Drawing.Font("Segoe UI Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email.Location = new System.Drawing.Point(51, 271);
-            this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(80, 38);
-            this.lbl_email.TabIndex = 5;
-            this.lbl_email.Text = "Email";
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Font = new System.Drawing.Font("Segoe UI Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username.Location = new System.Drawing.Point(51, 271);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(135, 38);
+            this.lbl_username.TabIndex = 5;
+            this.lbl_username.Text = "Username";
             // 
             // lbl_password
             // 
@@ -162,7 +162,7 @@
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.tb_password);
-            this.Controls.Add(this.lbl_email);
+            this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.lbl_Login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -182,7 +182,7 @@
         private System.Windows.Forms.PictureBox pb_logo1;
         private System.Windows.Forms.Label lbl_Login;
         private System.Windows.Forms.TextBox tb_email;
-        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.TextBox tb_password;
         private System.Windows.Forms.Button btn_login;

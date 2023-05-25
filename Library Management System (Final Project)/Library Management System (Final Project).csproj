@@ -46,16 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookList.Designer.cs">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksBorrowed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksBorrowed.Designer.cs">
+      <DependentUpon>BooksBorrowed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksLost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksLost.Designer.cs">
+      <DependentUpon>BooksLost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksReturned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksReturned.Designer.cs">
+      <DependentUpon>BooksReturned.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomepageBookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomepageBookList.Designer.cs">
+      <DependentUpon>HomepageBookList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BookList.resx">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksBorrowed.resx">
+      <DependentUpon>BooksBorrowed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksLost.resx">
+      <DependentUpon>BooksLost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksReturned.resx">
+      <DependentUpon>BooksReturned.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomepageBookList.resx">
+      <DependentUpon>HomepageBookList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
