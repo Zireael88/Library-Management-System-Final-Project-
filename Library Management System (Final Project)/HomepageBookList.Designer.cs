@@ -37,6 +37,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.mainpanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_ISBN = new System.Windows.Forms.TextBox();
+            this.txt_TimesBorrowed = new System.Windows.Forms.TextBox();
+            this.txt_Publisher = new System.Windows.Forms.TextBox();
+            this.txt_Author = new System.Windows.Forms.TextBox();
+            this.txt_Status = new System.Windows.Forms.TextBox();
+            this.txt_BookTitle = new System.Windows.Forms.TextBox();
             this.MinBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -68,12 +74,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txt_BookTitle = new System.Windows.Forms.TextBox();
-            this.txt_Status = new System.Windows.Forms.TextBox();
-            this.txt_Author = new System.Windows.Forms.TextBox();
-            this.txt_Publisher = new System.Windows.Forms.TextBox();
-            this.txt_TimesBorrowed = new System.Windows.Forms.TextBox();
-            this.txt_ISBN = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookCover)).BeginInit();
             this.panel3.SuspendLayout();
@@ -170,22 +170,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
             this.label2.Location = new System.Drawing.Point(248, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 41);
+            this.label2.Size = new System.Drawing.Size(166, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "Welcome Back,";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(455, 11);
+            this.label3.Location = new System.Drawing.Point(420, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 45);
+            this.label3.Size = new System.Drawing.Size(94, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "Admin!";
             // 
@@ -219,6 +219,72 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(304, 900);
             this.panel2.TabIndex = 13;
+            // 
+            // txt_ISBN
+            // 
+            this.txt_ISBN.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_ISBN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_ISBN.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ISBN.Location = new System.Drawing.Point(26, 525);
+            this.txt_ISBN.Name = "txt_ISBN";
+            this.txt_ISBN.ReadOnly = true;
+            this.txt_ISBN.Size = new System.Drawing.Size(239, 23);
+            this.txt_ISBN.TabIndex = 42;
+            // 
+            // txt_TimesBorrowed
+            // 
+            this.txt_TimesBorrowed.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_TimesBorrowed.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_TimesBorrowed.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TimesBorrowed.Location = new System.Drawing.Point(26, 765);
+            this.txt_TimesBorrowed.Name = "txt_TimesBorrowed";
+            this.txt_TimesBorrowed.ReadOnly = true;
+            this.txt_TimesBorrowed.Size = new System.Drawing.Size(239, 23);
+            this.txt_TimesBorrowed.TabIndex = 41;
+            // 
+            // txt_Publisher
+            // 
+            this.txt_Publisher.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_Publisher.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Publisher.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Publisher.Location = new System.Drawing.Point(27, 645);
+            this.txt_Publisher.Name = "txt_Publisher";
+            this.txt_Publisher.ReadOnly = true;
+            this.txt_Publisher.Size = new System.Drawing.Size(239, 23);
+            this.txt_Publisher.TabIndex = 40;
+            // 
+            // txt_Author
+            // 
+            this.txt_Author.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_Author.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Author.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Author.Location = new System.Drawing.Point(27, 587);
+            this.txt_Author.Name = "txt_Author";
+            this.txt_Author.ReadOnly = true;
+            this.txt_Author.Size = new System.Drawing.Size(239, 23);
+            this.txt_Author.TabIndex = 39;
+            // 
+            // txt_Status
+            // 
+            this.txt_Status.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_Status.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Status.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Status.Location = new System.Drawing.Point(27, 705);
+            this.txt_Status.Name = "txt_Status";
+            this.txt_Status.ReadOnly = true;
+            this.txt_Status.Size = new System.Drawing.Size(239, 23);
+            this.txt_Status.TabIndex = 38;
+            // 
+            // txt_BookTitle
+            // 
+            this.txt_BookTitle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_BookTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_BookTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_BookTitle.Location = new System.Drawing.Point(27, 465);
+            this.txt_BookTitle.Name = "txt_BookTitle";
+            this.txt_BookTitle.ReadOnly = true;
+            this.txt_BookTitle.Size = new System.Drawing.Size(239, 27);
+            this.txt_BookTitle.TabIndex = 37;
             // 
             // MinBtn
             // 
@@ -336,16 +402,18 @@
             // 
             // txt_InsertBookTitle
             // 
+            this.txt_InsertBookTitle.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_InsertBookTitle.Location = new System.Drawing.Point(382, 654);
             this.txt_InsertBookTitle.Name = "txt_InsertBookTitle";
-            this.txt_InsertBookTitle.Size = new System.Drawing.Size(228, 22);
+            this.txt_InsertBookTitle.Size = new System.Drawing.Size(228, 25);
             this.txt_InsertBookTitle.TabIndex = 15;
             // 
             // txt_InsertAuthor
             // 
+            this.txt_InsertAuthor.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_InsertAuthor.Location = new System.Drawing.Point(382, 732);
             this.txt_InsertAuthor.Name = "txt_InsertAuthor";
-            this.txt_InsertAuthor.Size = new System.Drawing.Size(228, 22);
+            this.txt_InsertAuthor.Size = new System.Drawing.Size(228, 25);
             this.txt_InsertAuthor.TabIndex = 16;
             // 
             // textBox3
@@ -371,13 +439,15 @@
             // 
             // txt_InsertISBN
             // 
+            this.txt_InsertISBN.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_InsertISBN.Location = new System.Drawing.Point(746, 654);
             this.txt_InsertISBN.Name = "txt_InsertISBN";
-            this.txt_InsertISBN.Size = new System.Drawing.Size(228, 22);
+            this.txt_InsertISBN.Size = new System.Drawing.Size(228, 25);
             this.txt_InsertISBN.TabIndex = 20;
             // 
             // btn_UploadImage
             // 
+            this.btn_UploadImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_UploadImage.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_UploadImage.Location = new System.Drawing.Point(746, 732);
             this.btn_UploadImage.Name = "btn_UploadImage";
@@ -520,66 +590,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(3, 920);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-            // 
-            // txt_BookTitle
-            // 
-            this.txt_BookTitle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_BookTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_BookTitle.Location = new System.Drawing.Point(27, 465);
-            this.txt_BookTitle.Name = "txt_BookTitle";
-            this.txt_BookTitle.ReadOnly = true;
-            this.txt_BookTitle.Size = new System.Drawing.Size(239, 15);
-            this.txt_BookTitle.TabIndex = 37;
-            // 
-            // txt_Status
-            // 
-            this.txt_Status.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Status.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Status.Location = new System.Drawing.Point(27, 705);
-            this.txt_Status.Name = "txt_Status";
-            this.txt_Status.ReadOnly = true;
-            this.txt_Status.Size = new System.Drawing.Size(239, 15);
-            this.txt_Status.TabIndex = 38;
-            // 
-            // txt_Author
-            // 
-            this.txt_Author.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Author.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Author.Location = new System.Drawing.Point(27, 587);
-            this.txt_Author.Name = "txt_Author";
-            this.txt_Author.ReadOnly = true;
-            this.txt_Author.Size = new System.Drawing.Size(239, 15);
-            this.txt_Author.TabIndex = 39;
-            // 
-            // txt_Publisher
-            // 
-            this.txt_Publisher.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Publisher.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Publisher.Location = new System.Drawing.Point(27, 645);
-            this.txt_Publisher.Name = "txt_Publisher";
-            this.txt_Publisher.ReadOnly = true;
-            this.txt_Publisher.Size = new System.Drawing.Size(239, 15);
-            this.txt_Publisher.TabIndex = 40;
-            // 
-            // txt_TimesBorrowed
-            // 
-            this.txt_TimesBorrowed.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_TimesBorrowed.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_TimesBorrowed.Location = new System.Drawing.Point(26, 765);
-            this.txt_TimesBorrowed.Name = "txt_TimesBorrowed";
-            this.txt_TimesBorrowed.ReadOnly = true;
-            this.txt_TimesBorrowed.Size = new System.Drawing.Size(239, 15);
-            this.txt_TimesBorrowed.TabIndex = 41;
-            // 
-            // txt_ISBN
-            // 
-            this.txt_ISBN.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_ISBN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_ISBN.Location = new System.Drawing.Point(26, 525);
-            this.txt_ISBN.Name = "txt_ISBN";
-            this.txt_ISBN.ReadOnly = true;
-            this.txt_ISBN.Size = new System.Drawing.Size(239, 15);
-            this.txt_ISBN.TabIndex = 42;
             // 
             // Form_Homepage
             // 
