@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,35 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookList.cs">
+    <Compile Include="form_LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookList.Designer.cs">
-      <DependentUpon>BookList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BooksBorrowed.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BooksBorrowed.Designer.cs">
-      <DependentUpon>BooksBorrowed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BooksLost.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BooksLost.Designer.cs">
-      <DependentUpon>BooksLost.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BooksReturned.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BooksReturned.Designer.cs">
-      <DependentUpon>BooksReturned.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="form_LogIn.Designer.cs">
+      <DependentUpon>form_LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="HomepageBookList.cs">
       <SubType>Form</SubType>
@@ -84,20 +61,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BookList.resx">
-      <DependentUpon>BookList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BooksBorrowed.resx">
-      <DependentUpon>BooksBorrowed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BooksLost.resx">
-      <DependentUpon>BooksLost.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BooksReturned.resx">
-      <DependentUpon>BooksReturned.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UC_BookLists.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_BookLists.Designer.cs">
+      <DependentUpon>UC_BookLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_BooksBorrowed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_BooksBorrowed.Designer.cs">
+      <DependentUpon>UC_BooksBorrowed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_BooksLost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_BooksLost.Designer.cs">
+      <DependentUpon>UC_BooksLost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_BooksReturned.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_BooksReturned.Designer.cs">
+      <DependentUpon>UC_BooksReturned.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="form_LogIn.resx">
+      <DependentUpon>form_LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomepageBookList.resx">
       <DependentUpon>HomepageBookList.cs</DependentUpon>
@@ -112,6 +101,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_BookLists.resx">
+      <DependentUpon>UC_BookLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_BooksBorrowed.resx">
+      <DependentUpon>UC_BooksBorrowed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_BooksLost.resx">
+      <DependentUpon>UC_BooksLost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_BooksReturned.resx">
+      <DependentUpon>UC_BooksReturned.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

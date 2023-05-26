@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Library_Management_System__Final_Project_
 {
-    public partial class form_LogIn : Form
+    public partial class UC_BooksReturned : UserControl
     {
-        public form_LogIn()
+        public UC_BooksReturned()
         {
             InitializeComponent();
         }

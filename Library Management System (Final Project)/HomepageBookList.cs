@@ -15,21 +15,16 @@ namespace Library_Management_System__Final_Project_
         public Form_Homepage()
         {
             InitializeComponent();
+
         }
 
-        public void loadform(object Form) 
+        private void Form_Homepage_Load(object sender, EventArgs e)
         {
-            if (this.mainpanel.Controls.Count > 0)
-                this.mainpanel.Controls.RemoveAt(0);
-            Form f = Form as Form;
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            this.mainpanel.Controls.Add(f);
-            this.mainpanel.Tag = f;
-            f.Show();
-            
+            uC_BookLists1.Visible = true;
+            uC_BooksBorrowed1.Visible = false;
+            uC_BooksLost1.Visible = false;
+            uC_BooksReturned1.Visible = false;
         }
-
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
@@ -41,24 +36,59 @@ namespace Library_Management_System__Final_Project_
                 this.WindowState=FormWindowState.Minimized;    
         }
 
-        private void Btn_BooksBorrowed_Click(object sender, EventArgs e)
-        {
-            loadform(new BooksBorrowed());
-        }
-
         private void Btn_BookList_Click(object sender, EventArgs e)
         {
-            loadform(new BookList());
+            uC_BookLists1.Visible = true;
+            uC_BooksBorrowed1.Visible = false;
+            uC_BooksLost1.Visible = false;
+            uC_BooksReturned1.Visible = false;
+            Btn_BookList.BackColor = Color.Gainsboro;
+            Btn_BooksBorrowed.BackColor = Color.White;
+            Btn_BooksLost.BackColor = Color.White;
+            Btn_BooksReturned.BackColor = Color.White;
+            // loadform(new BookList());
         }
+
+        private void Btn_BooksBorrowed_Click(object sender, EventArgs e)
+        {
+            uC_BookLists1.Visible = false;
+            uC_BooksBorrowed1.Visible = true;
+            uC_BooksLost1.Visible = false;
+            uC_BooksReturned1.Visible = false;
+            Btn_BookList.BackColor = Color.White;
+            Btn_BooksBorrowed.BackColor = Color.Gainsboro;
+            Btn_BooksLost.BackColor = Color.White;
+            Btn_BooksReturned.BackColor = Color.White;
+            //loadform(new BooksBorrowed());
+        }
+
 
         private void Btn_BooksReturned_Click(object sender, EventArgs e)
         {
-            loadform(new BooksReturned());
+            uC_BookLists1.Visible = false;
+            uC_BooksBorrowed1.Visible = false;
+            uC_BooksLost1.Visible = false;
+            uC_BooksReturned1.Visible = true;
+            Btn_BookList.BackColor = Color.White;
+            Btn_BooksBorrowed.BackColor = Color.White;
+            Btn_BooksLost.BackColor = Color.White;
+            Btn_BooksReturned.BackColor = Color.Gainsboro;
+            //loadform(new BooksReturned());
         }
 
         private void Btn_BooksLost_Click(object sender, EventArgs e)
         {
-            loadform(new BooksLost());
+            uC_BookLists1.Visible = false;
+            uC_BooksBorrowed1.Visible = false;
+            uC_BooksLost1.Visible = true;
+            uC_BooksReturned1.Visible = false;
+            Btn_BookList.BackColor = Color.White;
+            Btn_BooksBorrowed.BackColor = Color.White;
+            Btn_BooksLost.BackColor = Color.Gainsboro;
+            Btn_BooksReturned.BackColor = Color.White;
+            // loadform(new BooksLost());
         }
+
+
     }
 }

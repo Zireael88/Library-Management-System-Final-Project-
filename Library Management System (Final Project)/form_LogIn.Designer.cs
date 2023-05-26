@@ -48,7 +48,7 @@
             this.lbl_Login.AutoSize = true;
             this.lbl_Login.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Login.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Login.Location = new System.Drawing.Point(40, 94);
+            this.lbl_Login.Location = new System.Drawing.Point(30, 141);
             this.lbl_Login.Name = "lbl_Login";
             this.lbl_Login.Size = new System.Drawing.Size(280, 106);
             this.lbl_Login.TabIndex = 1;
@@ -105,6 +105,7 @@
             this.btn_login.TabIndex = 8;
             this.btn_login.Text = "LOG IN";
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // lbl_members
             // 
@@ -169,6 +170,7 @@
             this.Name = "form_LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
+            this.Load += new System.EventHandler(this.form_LogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_redrectangle)).EndInit();

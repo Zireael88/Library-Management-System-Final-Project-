@@ -35,14 +35,13 @@
             this.Btn_BooksLost = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.mainpanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txt_ISBN = new System.Windows.Forms.TextBox();
-            this.txt_TimesBorrowed = new System.Windows.Forms.TextBox();
-            this.txt_Publisher = new System.Windows.Forms.TextBox();
-            this.txt_Author = new System.Windows.Forms.TextBox();
-            this.txt_Status = new System.Windows.Forms.TextBox();
-            this.txt_BookTitle = new System.Windows.Forms.TextBox();
+            this.lbl_TimesBorrowed = new System.Windows.Forms.Label();
+            this.lbl_Status = new System.Windows.Forms.Label();
+            this.lbl_PublishedDate = new System.Windows.Forms.Label();
+            this.lbl_Author = new System.Windows.Forms.Label();
+            this.lbl_ISBN = new System.Windows.Forms.Label();
+            this.lbl_BookTitle = new System.Windows.Forms.Label();
             this.MinBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -62,11 +61,11 @@
             this.btn_UploadImage = new System.Windows.Forms.Button();
             this.btn_Insert = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lbl_InsertBookTitle = new System.Windows.Forms.Label();
+            this.lbl_InsertAuthor = new System.Windows.Forms.Label();
+            this.lbl_InsertPublishedDate = new System.Windows.Forms.Label();
+            this.lbl_InsertISBN = new System.Windows.Forms.Label();
+            this.lbl_InsertPhoto = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -74,6 +73,10 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.uC_BooksReturned1 = new Library_Management_System__Final_Project_.UC_BooksReturned();
+            this.uC_BooksLost1 = new Library_Management_System__Final_Project_.UC_BooksLost();
+            this.uC_BooksBorrowed1 = new Library_Management_System__Final_Project_.UC_BooksBorrowed();
+            this.uC_BookLists1 = new Library_Management_System__Final_Project_.UC_BookLists();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookCover)).BeginInit();
             this.panel3.SuspendLayout();
@@ -172,7 +175,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(248, 14);
+            this.label2.Location = new System.Drawing.Point(248, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 31);
             this.label2.TabIndex = 7;
@@ -183,27 +186,20 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(420, 14);
+            this.label3.Location = new System.Drawing.Point(413, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "Admin!";
             // 
-            // mainpanel
-            // 
-            this.mainpanel.Location = new System.Drawing.Point(217, 67);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(913, 441);
-            this.mainpanel.TabIndex = 10;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txt_ISBN);
-            this.panel2.Controls.Add(this.txt_TimesBorrowed);
-            this.panel2.Controls.Add(this.txt_Publisher);
-            this.panel2.Controls.Add(this.txt_Author);
-            this.panel2.Controls.Add(this.txt_Status);
-            this.panel2.Controls.Add(this.txt_BookTitle);
+            this.panel2.Controls.Add(this.lbl_TimesBorrowed);
+            this.panel2.Controls.Add(this.lbl_Status);
+            this.panel2.Controls.Add(this.lbl_PublishedDate);
+            this.panel2.Controls.Add(this.lbl_Author);
+            this.panel2.Controls.Add(this.lbl_ISBN);
+            this.panel2.Controls.Add(this.lbl_BookTitle);
             this.panel2.Controls.Add(this.MinBtn);
             this.panel2.Controls.Add(this.ExitBtn);
             this.panel2.Controls.Add(this.label16);
@@ -215,76 +211,70 @@
             this.panel2.Controls.Add(this.BookCover);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1136, 0);
+            this.panel2.Location = new System.Drawing.Point(1155, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(304, 900);
+            this.panel2.Size = new System.Drawing.Size(285, 900);
             this.panel2.TabIndex = 13;
             // 
-            // txt_ISBN
+            // lbl_TimesBorrowed
             // 
-            this.txt_ISBN.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_ISBN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_ISBN.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ISBN.Location = new System.Drawing.Point(26, 525);
-            this.txt_ISBN.Name = "txt_ISBN";
-            this.txt_ISBN.ReadOnly = true;
-            this.txt_ISBN.Size = new System.Drawing.Size(239, 23);
-            this.txt_ISBN.TabIndex = 42;
+            this.lbl_TimesBorrowed.AutoSize = true;
+            this.lbl_TimesBorrowed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TimesBorrowed.Location = new System.Drawing.Point(22, 760);
+            this.lbl_TimesBorrowed.Name = "lbl_TimesBorrowed";
+            this.lbl_TimesBorrowed.Size = new System.Drawing.Size(141, 28);
+            this.lbl_TimesBorrowed.TabIndex = 42;
+            this.lbl_TimesBorrowed.Text = "Hunger Games";
             // 
-            // txt_TimesBorrowed
+            // lbl_Status
             // 
-            this.txt_TimesBorrowed.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_TimesBorrowed.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_TimesBorrowed.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TimesBorrowed.Location = new System.Drawing.Point(26, 765);
-            this.txt_TimesBorrowed.Name = "txt_TimesBorrowed";
-            this.txt_TimesBorrowed.ReadOnly = true;
-            this.txt_TimesBorrowed.Size = new System.Drawing.Size(239, 23);
-            this.txt_TimesBorrowed.TabIndex = 41;
+            this.lbl_Status.AutoSize = true;
+            this.lbl_Status.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Status.Location = new System.Drawing.Point(22, 700);
+            this.lbl_Status.Name = "lbl_Status";
+            this.lbl_Status.Size = new System.Drawing.Size(141, 28);
+            this.lbl_Status.TabIndex = 41;
+            this.lbl_Status.Text = "Hunger Games";
             // 
-            // txt_Publisher
+            // lbl_PublishedDate
             // 
-            this.txt_Publisher.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Publisher.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Publisher.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Publisher.Location = new System.Drawing.Point(27, 645);
-            this.txt_Publisher.Name = "txt_Publisher";
-            this.txt_Publisher.ReadOnly = true;
-            this.txt_Publisher.Size = new System.Drawing.Size(239, 23);
-            this.txt_Publisher.TabIndex = 40;
+            this.lbl_PublishedDate.AutoSize = true;
+            this.lbl_PublishedDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PublishedDate.Location = new System.Drawing.Point(22, 640);
+            this.lbl_PublishedDate.Name = "lbl_PublishedDate";
+            this.lbl_PublishedDate.Size = new System.Drawing.Size(141, 28);
+            this.lbl_PublishedDate.TabIndex = 40;
+            this.lbl_PublishedDate.Text = "Hunger Games";
             // 
-            // txt_Author
+            // lbl_Author
             // 
-            this.txt_Author.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Author.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Author.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Author.Location = new System.Drawing.Point(27, 587);
-            this.txt_Author.Name = "txt_Author";
-            this.txt_Author.ReadOnly = true;
-            this.txt_Author.Size = new System.Drawing.Size(239, 23);
-            this.txt_Author.TabIndex = 39;
+            this.lbl_Author.AutoSize = true;
+            this.lbl_Author.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Author.Location = new System.Drawing.Point(21, 580);
+            this.lbl_Author.Name = "lbl_Author";
+            this.lbl_Author.Size = new System.Drawing.Size(141, 28);
+            this.lbl_Author.TabIndex = 39;
+            this.lbl_Author.Text = "Hunger Games";
             // 
-            // txt_Status
+            // lbl_ISBN
             // 
-            this.txt_Status.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Status.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Status.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Status.Location = new System.Drawing.Point(27, 705);
-            this.txt_Status.Name = "txt_Status";
-            this.txt_Status.ReadOnly = true;
-            this.txt_Status.Size = new System.Drawing.Size(239, 23);
-            this.txt_Status.TabIndex = 38;
+            this.lbl_ISBN.AutoSize = true;
+            this.lbl_ISBN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ISBN.Location = new System.Drawing.Point(21, 520);
+            this.lbl_ISBN.Name = "lbl_ISBN";
+            this.lbl_ISBN.Size = new System.Drawing.Size(141, 28);
+            this.lbl_ISBN.TabIndex = 38;
+            this.lbl_ISBN.Text = "Hunger Games";
             // 
-            // txt_BookTitle
+            // lbl_BookTitle
             // 
-            this.txt_BookTitle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_BookTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_BookTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_BookTitle.Location = new System.Drawing.Point(27, 465);
-            this.txt_BookTitle.Name = "txt_BookTitle";
-            this.txt_BookTitle.ReadOnly = true;
-            this.txt_BookTitle.Size = new System.Drawing.Size(239, 27);
-            this.txt_BookTitle.TabIndex = 37;
+            this.lbl_BookTitle.AutoSize = true;
+            this.lbl_BookTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_BookTitle.Location = new System.Drawing.Point(21, 460);
+            this.lbl_BookTitle.Name = "lbl_BookTitle";
+            this.lbl_BookTitle.Size = new System.Drawing.Size(141, 28);
+            this.lbl_BookTitle.TabIndex = 37;
+            this.lbl_BookTitle.Text = "Hunger Games";
             // 
             // MinBtn
             // 
@@ -292,7 +282,7 @@
             this.MinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MinBtn.Font = new System.Drawing.Font("Segoe UI Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinBtn.ForeColor = System.Drawing.Color.White;
-            this.MinBtn.Location = new System.Drawing.Point(227, 0);
+            this.MinBtn.Location = new System.Drawing.Point(207, 0);
             this.MinBtn.Name = "MinBtn";
             this.MinBtn.Size = new System.Drawing.Size(39, 33);
             this.MinBtn.TabIndex = 36;
@@ -306,7 +296,7 @@
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Segoe UI Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.White;
-            this.ExitBtn.Location = new System.Drawing.Point(265, 0);
+            this.ExitBtn.Location = new System.Drawing.Point(245, 0);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(39, 33);
             this.ExitBtn.TabIndex = 35;
@@ -469,60 +459,60 @@
             this.btn_Insert.Text = "INSERT";
             this.btn_Insert.UseVisualStyleBackColor = false;
             // 
-            // label18
+            // lbl_InsertBookTitle
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Gainsboro;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(378, 628);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(111, 23);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "BOOK TITLE:";
+            this.lbl_InsertBookTitle.AutoSize = true;
+            this.lbl_InsertBookTitle.BackColor = System.Drawing.Color.Gainsboro;
+            this.lbl_InsertBookTitle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_InsertBookTitle.Location = new System.Drawing.Point(378, 628);
+            this.lbl_InsertBookTitle.Name = "lbl_InsertBookTitle";
+            this.lbl_InsertBookTitle.Size = new System.Drawing.Size(111, 23);
+            this.lbl_InsertBookTitle.TabIndex = 26;
+            this.lbl_InsertBookTitle.Text = "BOOK TITLE:";
             // 
-            // label19
+            // lbl_InsertAuthor
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Gainsboro;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(378, 706);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 23);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "AUTHOR:";
+            this.lbl_InsertAuthor.AutoSize = true;
+            this.lbl_InsertAuthor.BackColor = System.Drawing.Color.Gainsboro;
+            this.lbl_InsertAuthor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_InsertAuthor.Location = new System.Drawing.Point(378, 706);
+            this.lbl_InsertAuthor.Name = "lbl_InsertAuthor";
+            this.lbl_InsertAuthor.Size = new System.Drawing.Size(86, 23);
+            this.lbl_InsertAuthor.TabIndex = 27;
+            this.lbl_InsertAuthor.Text = "AUTHOR:";
             // 
-            // label20
+            // lbl_InsertPublishedDate
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Gainsboro;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(378, 782);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(155, 23);
-            this.label20.TabIndex = 28;
-            this.label20.Text = "PUBLISHED DATE:";
+            this.lbl_InsertPublishedDate.AutoSize = true;
+            this.lbl_InsertPublishedDate.BackColor = System.Drawing.Color.Gainsboro;
+            this.lbl_InsertPublishedDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_InsertPublishedDate.Location = new System.Drawing.Point(378, 782);
+            this.lbl_InsertPublishedDate.Name = "lbl_InsertPublishedDate";
+            this.lbl_InsertPublishedDate.Size = new System.Drawing.Size(155, 23);
+            this.lbl_InsertPublishedDate.TabIndex = 28;
+            this.lbl_InsertPublishedDate.Text = "PUBLISHED DATE:";
             // 
-            // label22
+            // lbl_InsertISBN
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Gainsboro;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(742, 628);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(54, 23);
-            this.label22.TabIndex = 30;
-            this.label22.Text = "ISBN:";
+            this.lbl_InsertISBN.AutoSize = true;
+            this.lbl_InsertISBN.BackColor = System.Drawing.Color.Gainsboro;
+            this.lbl_InsertISBN.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_InsertISBN.Location = new System.Drawing.Point(742, 628);
+            this.lbl_InsertISBN.Name = "lbl_InsertISBN";
+            this.lbl_InsertISBN.Size = new System.Drawing.Size(54, 23);
+            this.lbl_InsertISBN.TabIndex = 30;
+            this.lbl_InsertISBN.Text = "ISBN:";
             // 
-            // label21
+            // lbl_InsertPhoto
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Gainsboro;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(742, 707);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(72, 23);
-            this.label21.TabIndex = 31;
-            this.label21.Text = "PHOTO:";
+            this.lbl_InsertPhoto.AutoSize = true;
+            this.lbl_InsertPhoto.BackColor = System.Drawing.Color.Gainsboro;
+            this.lbl_InsertPhoto.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_InsertPhoto.Location = new System.Drawing.Point(742, 707);
+            this.lbl_InsertPhoto.Name = "lbl_InsertPhoto";
+            this.lbl_InsertPhoto.Size = new System.Drawing.Size(72, 23);
+            this.lbl_InsertPhoto.TabIndex = 31;
+            this.lbl_InsertPhoto.Text = "PHOTO:";
             // 
             // panel3
             // 
@@ -576,7 +566,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox3.Location = new System.Drawing.Point(1127, -9);
+            this.pictureBox3.Location = new System.Drawing.Point(1146, -9);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(3, 920);
             this.pictureBox3.TabIndex = 9;
@@ -591,19 +581,51 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
+            // uC_BooksReturned1
+            // 
+            this.uC_BooksReturned1.Location = new System.Drawing.Point(227, 81);
+            this.uC_BooksReturned1.Name = "uC_BooksReturned1";
+            this.uC_BooksReturned1.Size = new System.Drawing.Size(913, 441);
+            this.uC_BooksReturned1.TabIndex = 38;
+            // 
+            // uC_BooksLost1
+            // 
+            this.uC_BooksLost1.Location = new System.Drawing.Point(227, 81);
+            this.uC_BooksLost1.Name = "uC_BooksLost1";
+            this.uC_BooksLost1.Size = new System.Drawing.Size(913, 441);
+            this.uC_BooksLost1.TabIndex = 37;
+            // 
+            // uC_BooksBorrowed1
+            // 
+            this.uC_BooksBorrowed1.Location = new System.Drawing.Point(227, 81);
+            this.uC_BooksBorrowed1.Name = "uC_BooksBorrowed1";
+            this.uC_BooksBorrowed1.Size = new System.Drawing.Size(913, 441);
+            this.uC_BooksBorrowed1.TabIndex = 36;
+            // 
+            // uC_BookLists1
+            // 
+            this.uC_BookLists1.Location = new System.Drawing.Point(227, 81);
+            this.uC_BookLists1.Name = "uC_BookLists1";
+            this.uC_BookLists1.Size = new System.Drawing.Size(913, 441);
+            this.uC_BookLists1.TabIndex = 35;
+            // 
             // Form_Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.Controls.Add(this.uC_BooksReturned1);
+            this.Controls.Add(this.uC_BooksLost1);
+            this.Controls.Add(this.uC_BooksBorrowed1);
+            this.Controls.Add(this.uC_BookLists1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.lbl_InsertPhoto);
+            this.Controls.Add(this.lbl_InsertISBN);
+            this.Controls.Add(this.lbl_InsertPublishedDate);
+            this.Controls.Add(this.lbl_InsertAuthor);
+            this.Controls.Add(this.lbl_InsertBookTitle);
             this.Controls.Add(this.btn_Insert);
             this.Controls.Add(this.btn_UploadImage);
             this.Controls.Add(this.txt_InsertISBN);
@@ -624,12 +646,12 @@
             this.Controls.Add(this.Btn_BooksBorrowed);
             this.Controls.Add(this.Btn_BookList);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.mainpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form_Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
+            this.Load += new System.EventHandler(this.Form_Homepage_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookCover)).EndInit();
@@ -656,7 +678,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel mainpanel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox BookCover;
@@ -676,21 +697,25 @@
         private System.Windows.Forms.Button btn_UploadImage;
         private System.Windows.Forms.Button btn_Insert;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lbl_InsertBookTitle;
+        private System.Windows.Forms.Label lbl_InsertAuthor;
+        private System.Windows.Forms.Label lbl_InsertPublishedDate;
+        private System.Windows.Forms.Label lbl_InsertISBN;
+        private System.Windows.Forms.Label lbl_InsertPhoto;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button ExitBtn;
         private System.Windows.Forms.Button MinBtn;
-        private System.Windows.Forms.TextBox txt_ISBN;
-        private System.Windows.Forms.TextBox txt_TimesBorrowed;
-        private System.Windows.Forms.TextBox txt_Publisher;
-        private System.Windows.Forms.TextBox txt_Author;
-        private System.Windows.Forms.TextBox txt_Status;
-        private System.Windows.Forms.TextBox txt_BookTitle;
+        private System.Windows.Forms.Label lbl_TimesBorrowed;
+        private System.Windows.Forms.Label lbl_Status;
+        private System.Windows.Forms.Label lbl_PublishedDate;
+        private System.Windows.Forms.Label lbl_Author;
+        private System.Windows.Forms.Label lbl_ISBN;
+        private System.Windows.Forms.Label lbl_BookTitle;
+        private UC_BookLists uC_BookLists1;
+        private UC_BooksBorrowed uC_BooksBorrowed1;
+        private UC_BooksLost uC_BooksLost1;
+        private UC_BooksReturned uC_BooksReturned1;
     }
 }
