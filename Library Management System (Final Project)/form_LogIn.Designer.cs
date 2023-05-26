@@ -111,13 +111,13 @@
             // 
             this.lbl_members.AutoSize = true;
             this.lbl_members.BackColor = System.Drawing.Color.Maroon;
-            this.lbl_members.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_members.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_members.ForeColor = System.Drawing.Color.White;
-            this.lbl_members.Location = new System.Drawing.Point(986, 691);
+            this.lbl_members.Location = new System.Drawing.Point(970, 728);
             this.lbl_members.Name = "lbl_members";
-            this.lbl_members.Size = new System.Drawing.Size(195, 140);
+            this.lbl_members.Size = new System.Drawing.Size(203, 112);
             this.lbl_members.TabIndex = 11;
-            this.lbl_members.Text = "Made by:\r\n\r\nBalatbat, Ellaine Rose\r\nTan, Samantha Faith\r\nYolola, Lenar Andrei\r\n";
+            this.lbl_members.Text = "Made by:\r\nBalatbat, Ellaine Rose\r\nTan, Samantha Faith\r\nYolola, Lenar Andrei\r\n";
             // 
             // pb_logo1
             // 

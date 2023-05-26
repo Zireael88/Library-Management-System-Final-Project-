@@ -28,14 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.loginDBDataSet = new Library_Management_System__Final_Project_.LoginDBDataSet();
+            this.accountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.accountTableAdapter = new Library_Management_System__Final_Project_.LoginDBDataSetTableAdapters.AccountTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button9
@@ -107,6 +113,20 @@
             this.pictureBox8.TabIndex = 43;
             this.pictureBox8.TabStop = false;
             // 
+            // loginDBDataSet
+            // 
+            this.loginDBDataSet.DataSetName = "LoginDBDataSet";
+            this.loginDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // accountBindingSource
+            // 
+            this.accountBindingSource.DataMember = "Account";
+            this.accountBindingSource.DataSource = this.loginDBDataSet;
+            // 
+            // accountTableAdapter
+            // 
+            this.accountTableAdapter.ClearBeforeFill = true;
+            // 
             // UC_BookLists
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -121,6 +141,8 @@
             this.Size = new System.Drawing.Size(913, 441);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +156,8 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.BindingSource accountBindingSource;
+        private LoginDBDataSet loginDBDataSet;
+        private LoginDBDataSetTableAdapters.AccountTableAdapter accountTableAdapter;
     }
 }

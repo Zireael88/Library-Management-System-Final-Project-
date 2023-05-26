@@ -93,6 +93,26 @@ namespace Library_Management_System__Final_Project_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_55_16 {
+            get {
+                object obj = ResourceManager.GetObject("arrow-55-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_80_16 {
+            get {
+                object obj = ResourceManager.GetObject("arrow-80-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_library_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-library-100", resourceCulture);
@@ -183,6 +203,16 @@ namespace Library_Management_System__Final_Project_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap question_mark_2_16 {
+            get {
+                object obj = ResourceManager.GetObject("question-mark-2-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap step_ladder {
             get {
                 object obj = ResourceManager.GetObject("step-ladder", resourceCulture);
@@ -196,6 +226,36 @@ namespace Library_Management_System__Final_Project_.Properties {
         internal static System.Drawing.Bitmap Untitled_design__1_ {
             get {
                 object obj = ResourceManager.GetObject("Untitled design (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_details_128 {
+            get {
+                object obj = ResourceManager.GetObject("view-details-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_details_16 {
+            get {
+                object obj = ResourceManager.GetObject("view-details-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_details_64 {
+            get {
+                object obj = ResourceManager.GetObject("view-details-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

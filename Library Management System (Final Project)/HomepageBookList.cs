@@ -27,8 +27,13 @@ namespace Library_Management_System__Final_Project_
         }
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
-            
+            DialogResult IExit;
+            IExit = MessageBox.Show("Are you sure you want to exit", "Leaving So Soon?", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (IExit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
         }
 
         private void MinBtn_Click(object sender, EventArgs e)

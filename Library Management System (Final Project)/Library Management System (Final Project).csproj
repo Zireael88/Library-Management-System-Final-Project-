@@ -59,6 +59,11 @@
     <Compile Include="HomepageBookList.Designer.cs">
       <DependentUpon>HomepageBookList.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UC_BookLists.cs">
@@ -113,6 +118,17 @@
     <EmbeddedResource Include="UC_BooksReturned.resx">
       <DependentUpon>UC_BooksReturned.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LoginDBDataSet.xsc">
+      <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDBDataSet.xss">
+      <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -170,6 +186,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled design %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-details-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-details-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-details-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-55-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-80-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark-2-16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

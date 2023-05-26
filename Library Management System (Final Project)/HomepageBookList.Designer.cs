@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Btn_BookList = new System.Windows.Forms.Button();
-            this.Btn_BooksBorrowed = new System.Windows.Forms.Button();
-            this.Btn_BooksReturned = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Btn_BooksLost = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,7 +46,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.BookCover = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_InsertBookTitle = new System.Windows.Forms.TextBox();
             this.txt_InsertAuthor = new System.Windows.Forms.TextBox();
@@ -67,79 +62,30 @@
             this.lbl_InsertISBN = new System.Windows.Forms.Label();
             this.lbl_InsertPhoto = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.uC_BooksReturned1 = new Library_Management_System__Final_Project_.UC_BooksReturned();
             this.uC_BooksLost1 = new Library_Management_System__Final_Project_.UC_BooksLost();
             this.uC_BooksBorrowed1 = new Library_Management_System__Final_Project_.UC_BooksBorrowed();
             this.uC_BookLists1 = new Library_Management_System__Final_Project_.UC_BookLists();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.BookCover = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_BooksLost = new System.Windows.Forms.Button();
+            this.Btn_BooksReturned = new System.Windows.Forms.Button();
+            this.Btn_BooksBorrowed = new System.Windows.Forms.Button();
+            this.Btn_BookList = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BookCover)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Btn_BookList
-            // 
-            this.Btn_BookList.BackColor = System.Drawing.Color.Gainsboro;
-            this.Btn_BookList.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.Btn_BookList.FlatAppearance.BorderSize = 0;
-            this.Btn_BookList.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btn_BookList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_BookList.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_BookList.ForeColor = System.Drawing.Color.Maroon;
-            this.Btn_BookList.Location = new System.Drawing.Point(22, 181);
-            this.Btn_BookList.Name = "Btn_BookList";
-            this.Btn_BookList.Size = new System.Drawing.Size(172, 32);
-            this.Btn_BookList.TabIndex = 1;
-            this.Btn_BookList.Text = "Book List";
-            this.Btn_BookList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_BookList.UseVisualStyleBackColor = false;
-            this.Btn_BookList.Click += new System.EventHandler(this.Btn_BookList_Click);
-            // 
-            // Btn_BooksBorrowed
-            // 
-            this.Btn_BooksBorrowed.BackColor = System.Drawing.Color.White;
-            this.Btn_BooksBorrowed.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.Btn_BooksBorrowed.FlatAppearance.BorderSize = 0;
-            this.Btn_BooksBorrowed.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btn_BooksBorrowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_BooksBorrowed.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_BooksBorrowed.ForeColor = System.Drawing.Color.Maroon;
-            this.Btn_BooksBorrowed.Location = new System.Drawing.Point(22, 221);
-            this.Btn_BooksBorrowed.Name = "Btn_BooksBorrowed";
-            this.Btn_BooksBorrowed.Size = new System.Drawing.Size(172, 32);
-            this.Btn_BooksBorrowed.TabIndex = 2;
-            this.Btn_BooksBorrowed.Text = "Books Borrowed";
-            this.Btn_BooksBorrowed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_BooksBorrowed.UseVisualStyleBackColor = false;
-            this.Btn_BooksBorrowed.Click += new System.EventHandler(this.Btn_BooksBorrowed_Click);
-            // 
-            // Btn_BooksReturned
-            // 
-            this.Btn_BooksReturned.BackColor = System.Drawing.Color.White;
-            this.Btn_BooksReturned.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.Btn_BooksReturned.FlatAppearance.BorderSize = 0;
-            this.Btn_BooksReturned.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btn_BooksReturned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_BooksReturned.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_BooksReturned.ForeColor = System.Drawing.Color.Maroon;
-            this.Btn_BooksReturned.Location = new System.Drawing.Point(22, 261);
-            this.Btn_BooksReturned.Name = "Btn_BooksReturned";
-            this.Btn_BooksReturned.Size = new System.Drawing.Size(172, 32);
-            this.Btn_BooksReturned.TabIndex = 3;
-            this.Btn_BooksReturned.Text = "Books Returned";
-            this.Btn_BooksReturned.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_BooksReturned.UseVisualStyleBackColor = false;
-            this.Btn_BooksReturned.Click += new System.EventHandler(this.Btn_BooksReturned_Click);
             // 
             // label1
             // 
@@ -151,24 +97,6 @@
             this.label1.Size = new System.Drawing.Size(73, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Menu";
-            // 
-            // Btn_BooksLost
-            // 
-            this.Btn_BooksLost.BackColor = System.Drawing.Color.White;
-            this.Btn_BooksLost.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.Btn_BooksLost.FlatAppearance.BorderSize = 0;
-            this.Btn_BooksLost.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btn_BooksLost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_BooksLost.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_BooksLost.ForeColor = System.Drawing.Color.Maroon;
-            this.Btn_BooksLost.Location = new System.Drawing.Point(22, 301);
-            this.Btn_BooksLost.Name = "Btn_BooksLost";
-            this.Btn_BooksLost.Size = new System.Drawing.Size(172, 32);
-            this.Btn_BooksLost.TabIndex = 5;
-            this.Btn_BooksLost.Text = "Books Lost";
-            this.Btn_BooksLost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_BooksLost.UseVisualStyleBackColor = false;
-            this.Btn_BooksLost.Click += new System.EventHandler(this.Btn_BooksLost_Click);
             // 
             // label2
             // 
@@ -370,15 +298,6 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Book Title: ";
             // 
-            // BookCover
-            // 
-            this.BookCover.BackColor = System.Drawing.Color.Gainsboro;
-            this.BookCover.Location = new System.Drawing.Point(61, 141);
-            this.BookCover.Name = "BookCover";
-            this.BookCover.Size = new System.Drawing.Size(160, 256);
-            this.BookCover.TabIndex = 14;
-            this.BookCover.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -523,16 +442,6 @@
             this.panel3.Size = new System.Drawing.Size(220, 900);
             this.panel3.TabIndex = 32;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Library_Management_System__Final_Project_.Properties.Resources.logo_no_background;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(199, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -544,42 +453,6 @@
             this.label15.Size = new System.Drawing.Size(151, 35);
             this.label15.TabIndex = 34;
             this.label15.Text = "Insert Book";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox9.Location = new System.Drawing.Point(330, 558);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(694, 38);
-            this.pictureBox9.TabIndex = 33;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox5.Location = new System.Drawing.Point(330, 587);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(694, 274);
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox3.Location = new System.Drawing.Point(1146, -9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(3, 920);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox2.Location = new System.Drawing.Point(217, -9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(3, 920);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
             // 
             // uC_BooksReturned1
             // 
@@ -608,6 +481,142 @@
             this.uC_BookLists1.Name = "uC_BookLists1";
             this.uC_BookLists1.Size = new System.Drawing.Size(913, 441);
             this.uC_BookLists1.TabIndex = 35;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox9.Location = new System.Drawing.Point(330, 558);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(694, 38);
+            this.pictureBox9.TabIndex = 33;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox5.Location = new System.Drawing.Point(330, 587);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(694, 274);
+            this.pictureBox5.TabIndex = 14;
+            this.pictureBox5.TabStop = false;
+            // 
+            // BookCover
+            // 
+            this.BookCover.BackColor = System.Drawing.Color.Gainsboro;
+            this.BookCover.Location = new System.Drawing.Point(61, 141);
+            this.BookCover.Name = "BookCover";
+            this.BookCover.Size = new System.Drawing.Size(160, 256);
+            this.BookCover.TabIndex = 14;
+            this.BookCover.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox3.Location = new System.Drawing.Point(1146, -9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(3, 920);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox2.Location = new System.Drawing.Point(217, -9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(3, 920);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // Btn_BooksLost
+            // 
+            this.Btn_BooksLost.BackColor = System.Drawing.Color.White;
+            this.Btn_BooksLost.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.Btn_BooksLost.FlatAppearance.BorderSize = 0;
+            this.Btn_BooksLost.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btn_BooksLost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_BooksLost.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_BooksLost.ForeColor = System.Drawing.Color.Maroon;
+            this.Btn_BooksLost.Image = global::Library_Management_System__Final_Project_.Properties.Resources.question_mark_2_16;
+            this.Btn_BooksLost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BooksLost.Location = new System.Drawing.Point(22, 301);
+            this.Btn_BooksLost.Name = "Btn_BooksLost";
+            this.Btn_BooksLost.Size = new System.Drawing.Size(172, 32);
+            this.Btn_BooksLost.TabIndex = 5;
+            this.Btn_BooksLost.Text = "      Books Lost";
+            this.Btn_BooksLost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BooksLost.UseVisualStyleBackColor = false;
+            this.Btn_BooksLost.Click += new System.EventHandler(this.Btn_BooksLost_Click);
+            // 
+            // Btn_BooksReturned
+            // 
+            this.Btn_BooksReturned.BackColor = System.Drawing.Color.White;
+            this.Btn_BooksReturned.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.Btn_BooksReturned.FlatAppearance.BorderSize = 0;
+            this.Btn_BooksReturned.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btn_BooksReturned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_BooksReturned.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_BooksReturned.ForeColor = System.Drawing.Color.Maroon;
+            this.Btn_BooksReturned.Image = global::Library_Management_System__Final_Project_.Properties.Resources.arrow_55_16;
+            this.Btn_BooksReturned.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BooksReturned.Location = new System.Drawing.Point(22, 261);
+            this.Btn_BooksReturned.Name = "Btn_BooksReturned";
+            this.Btn_BooksReturned.Size = new System.Drawing.Size(172, 32);
+            this.Btn_BooksReturned.TabIndex = 3;
+            this.Btn_BooksReturned.Text = "      Books Returned";
+            this.Btn_BooksReturned.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BooksReturned.UseVisualStyleBackColor = false;
+            this.Btn_BooksReturned.Click += new System.EventHandler(this.Btn_BooksReturned_Click);
+            // 
+            // Btn_BooksBorrowed
+            // 
+            this.Btn_BooksBorrowed.BackColor = System.Drawing.Color.White;
+            this.Btn_BooksBorrowed.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.Btn_BooksBorrowed.FlatAppearance.BorderSize = 0;
+            this.Btn_BooksBorrowed.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btn_BooksBorrowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_BooksBorrowed.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_BooksBorrowed.ForeColor = System.Drawing.Color.Maroon;
+            this.Btn_BooksBorrowed.Image = global::Library_Management_System__Final_Project_.Properties.Resources.arrow_80_16;
+            this.Btn_BooksBorrowed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BooksBorrowed.Location = new System.Drawing.Point(22, 221);
+            this.Btn_BooksBorrowed.Name = "Btn_BooksBorrowed";
+            this.Btn_BooksBorrowed.Size = new System.Drawing.Size(172, 32);
+            this.Btn_BooksBorrowed.TabIndex = 2;
+            this.Btn_BooksBorrowed.Text = "      Books Borrowed";
+            this.Btn_BooksBorrowed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BooksBorrowed.UseVisualStyleBackColor = false;
+            this.Btn_BooksBorrowed.Click += new System.EventHandler(this.Btn_BooksBorrowed_Click);
+            // 
+            // Btn_BookList
+            // 
+            this.Btn_BookList.BackColor = System.Drawing.Color.Gainsboro;
+            this.Btn_BookList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Btn_BookList.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.Btn_BookList.FlatAppearance.BorderSize = 0;
+            this.Btn_BookList.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btn_BookList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_BookList.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_BookList.ForeColor = System.Drawing.Color.Maroon;
+            this.Btn_BookList.Image = global::Library_Management_System__Final_Project_.Properties.Resources.view_details_16;
+            this.Btn_BookList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BookList.Location = new System.Drawing.Point(22, 181);
+            this.Btn_BookList.Name = "Btn_BookList";
+            this.Btn_BookList.Size = new System.Drawing.Size(172, 32);
+            this.Btn_BookList.TabIndex = 1;
+            this.Btn_BookList.Text = "      Book List";
+            this.Btn_BookList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_BookList.UseVisualStyleBackColor = false;
+            this.Btn_BookList.Click += new System.EventHandler(this.Btn_BookList_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Library_Management_System__Final_Project_.Properties.Resources.logo_no_background;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(199, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_Homepage
             // 
@@ -654,13 +663,13 @@
             this.Load += new System.EventHandler(this.Form_Homepage_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BookCover)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookCover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -669,7 +678,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Btn_BookList;
         private System.Windows.Forms.Button Btn_BooksBorrowed;
         private System.Windows.Forms.Button Btn_BooksReturned;
         private System.Windows.Forms.Label label1;
@@ -717,5 +725,6 @@
         private UC_BooksBorrowed uC_BooksBorrowed1;
         private UC_BooksLost uC_BooksLost1;
         private UC_BooksReturned uC_BooksReturned1;
+        private System.Windows.Forms.Button Btn_BookList;
     }
 }
