@@ -47,11 +47,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BooksDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BooksDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BooksDatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BooksDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BooksDatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BooksDatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BooksDatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BooksDatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BooksDatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BooksDatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Borrow.Designer.cs">
+      <DependentUpon>Form_Borrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditForm.Designer.cs">
+      <DependentUpon>Form_EditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="form_LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form_LogIn.Designer.cs">
       <DependentUpon>form_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Signup.Designer.cs">
+      <DependentUpon>form_Signup.cs</DependentUpon>
     </Compile>
     <Compile Include="HomepageBookList.cs">
       <SubType>Form</SubType>
@@ -90,8 +133,17 @@
     <Compile Include="UC_BooksReturned.Designer.cs">
       <DependentUpon>UC_BooksReturned.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_Borrow.resx">
+      <DependentUpon>Form_Borrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditForm.resx">
+      <DependentUpon>Form_EditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form_LogIn.resx">
       <DependentUpon>form_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Signup.resx">
+      <DependentUpon>form_Signup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomepageBookList.resx">
       <DependentUpon>HomepageBookList.cs</DependentUpon>
@@ -118,6 +170,61 @@
     <EmbeddedResource Include="UC_BooksReturned.resx">
       <DependentUpon>UC_BooksReturned.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BooksDatabaseDataSet.xsc">
+      <DependentUpon>BooksDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooksDatabaseDataSet.xss">
+      <DependentUpon>BooksDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet1.xsc">
+      <DependentUpon>BooksDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksDatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooksDatabaseDataSet1.xss">
+      <DependentUpon>BooksDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet2.xsc">
+      <DependentUpon>BooksDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksDatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooksDatabaseDataSet2.xss">
+      <DependentUpon>BooksDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet3.xsc">
+      <DependentUpon>BooksDatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksDatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooksDatabaseDataSet3.xss">
+      <DependentUpon>BooksDatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet4.xsc">
+      <DependentUpon>BooksDatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksDatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooksDatabaseDataSet4.xss">
+      <DependentUpon>BooksDatabaseDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="LoginDBDataSet.xsc">
       <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
     </None>
@@ -204,6 +311,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\question-mark-2-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BooksDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\icons8-refresh-32.png" />
+    <None Include="Resources\icons8-refresh-24.png" />
+    <None Include="Resources\icons8-refresh-16.png" />
+    <None Include="Resources\icons8-refresh-64 %281%29.png" />
+    <None Include="Resources\icons8-refresh-64.png" />
+    <None Include="Resources\icons8-important-book-24.png" />
+    <None Include="Resources\icons8-books-24.png" />
+    <None Include="Resources\icons8-return-book-24.png" />
+    <None Include="Resources\icons8-borrow-book-24.png" />
+    <None Include="Resources\icons8-list-16.png" />
+    <None Include="Resources\icons8-list-24.png" />
+    <None Include="Resources\icons8-hide-24.png" />
+    <None Include="Resources\icons8-show-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

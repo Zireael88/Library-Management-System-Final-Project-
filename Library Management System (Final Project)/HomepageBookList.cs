@@ -7,16 +7,46 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Library_Management_System__Final_Project_
 {
     public partial class Form_Homepage : Form
     {
+
+        OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\saman\Documents\BooksDatabase.accdb");
         public Form_Homepage()
         {
             InitializeComponent();
 
         }
+        //void dataviewer()
+        //{
+        //    try
+        //    {
+
+        //        conn.Open();
+        //        OleDbCommand cmd = conn.CreateCommand();
+        //        cmd.CommandType = CommandType.Text;
+        //        cmd.CommandText = "select * from BookList";
+        //        cmd.ExecuteNonQuery();
+        //        DataTable dt = new DataTable();
+        //        OleDbDataAdapter dp = new OleDbDataAdapter(cmd);
+        //        dp.Fill(dt);
+        //        //dg_Booklist.DataSource = dt;
+        //        conn.Close();
+
+
+
+
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+        //        conn.Close();
+        //    }
+        //}
 
         private void Form_Homepage_Load(object sender, EventArgs e)
         {
@@ -24,7 +54,10 @@ namespace Library_Management_System__Final_Project_
             uC_BooksBorrowed1.Visible = false;
             uC_BooksLost1.Visible = false;
             uC_BooksReturned1.Visible = false;
+
+
         }
+
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             DialogResult IExit;
@@ -51,7 +84,6 @@ namespace Library_Management_System__Final_Project_
             Btn_BooksBorrowed.BackColor = Color.White;
             Btn_BooksLost.BackColor = Color.White;
             Btn_BooksReturned.BackColor = Color.White;
-            // loadform(new BookList());
         }
 
         private void Btn_BooksBorrowed_Click(object sender, EventArgs e)
@@ -64,7 +96,6 @@ namespace Library_Management_System__Final_Project_
             Btn_BooksBorrowed.BackColor = Color.Gainsboro;
             Btn_BooksLost.BackColor = Color.White;
             Btn_BooksReturned.BackColor = Color.White;
-            //loadform(new BooksBorrowed());
         }
 
 
@@ -78,7 +109,6 @@ namespace Library_Management_System__Final_Project_
             Btn_BooksBorrowed.BackColor = Color.White;
             Btn_BooksLost.BackColor = Color.White;
             Btn_BooksReturned.BackColor = Color.Gainsboro;
-            //loadform(new BooksReturned());
         }
 
         private void Btn_BooksLost_Click(object sender, EventArgs e)
@@ -91,9 +121,49 @@ namespace Library_Management_System__Final_Project_
             Btn_BooksBorrowed.BackColor = Color.White;
             Btn_BooksLost.BackColor = Color.Gainsboro;
             Btn_BooksReturned.BackColor = Color.White;
-            // loadform(new BooksLost());
         }
 
+        private void btn_Insert_Click(object sender, EventArgs e)
+        {
 
+            
+            try
+            {
+                conn.Open();
+                OleDbCommand cmd = conn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Insert into BookList(ISBN,BookTitle,Author,PublishedDate)values('" + txt_InsertISBN.Text + "','" + txt_InsertBookTitle.Text + "','" + txt_InsertAuthor.Text + "','" + dtp_InsertPublishedDate.Text + "')";
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Book Successfully Added", "Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                conn.Close();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                conn.Close();
+            }
+            txt_InsertAuthor.Text = "";
+            txt_InsertISBN.Text = "";
+            txt_InsertBookTitle.Text = "";
+        }
+
+        private void btn_UploadImage_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "JPEG|*.jpg", ValidateNames = true, Multiselect = false })
+                {
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                    {
+                        pb_PreviewImage.Image = Image.FromFile(ofd.FileName);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }
+        }
     }
 }

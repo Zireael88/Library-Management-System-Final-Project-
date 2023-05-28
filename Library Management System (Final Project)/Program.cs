@@ -14,6 +14,7 @@ namespace Library_Management_System__Final_Project_
         [STAThread]
         static void Main()
         {
+
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
             Application.EnableVisualStyles();

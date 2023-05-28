@@ -35,9 +35,14 @@
             this.tb_password = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
             this.lbl_members = new System.Windows.Forms.Label();
+            this.ExitBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_Signup = new System.Windows.Forms.Label();
+            this.btn_showpassword = new System.Windows.Forms.Button();
             this.pb_logo1 = new System.Windows.Forms.PictureBox();
             this.pb_image = new System.Windows.Forms.PictureBox();
             this.pb_redrectangle = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_redrectangle)).BeginInit();
@@ -92,6 +97,7 @@
             this.tb_password.Size = new System.Drawing.Size(565, 38);
             this.tb_password.TabIndex = 6;
             this.tb_password.UseSystemPasswordChar = true;
+            this.tb_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_password_KeyDown);
             // 
             // btn_login
             // 
@@ -99,9 +105,9 @@
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_login.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_login.Location = new System.Drawing.Point(241, 536);
+            this.btn_login.Location = new System.Drawing.Point(48, 518);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(150, 46);
+            this.btn_login.Size = new System.Drawing.Size(565, 38);
             this.btn_login.TabIndex = 8;
             this.btn_login.Text = "LOG IN";
             this.btn_login.UseVisualStyleBackColor = false;
@@ -113,17 +119,69 @@
             this.lbl_members.BackColor = System.Drawing.Color.Maroon;
             this.lbl_members.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_members.ForeColor = System.Drawing.Color.White;
-            this.lbl_members.Location = new System.Drawing.Point(970, 728);
+            this.lbl_members.Location = new System.Drawing.Point(1114, 655);
             this.lbl_members.Name = "lbl_members";
-            this.lbl_members.Size = new System.Drawing.Size(203, 112);
+            this.lbl_members.Size = new System.Drawing.Size(198, 84);
             this.lbl_members.TabIndex = 11;
-            this.lbl_members.Text = "Made by:\r\nBalatbat, Ellaine Rose\r\nTan, Samantha Faith\r\nYolola, Lenar Andrei\r\n";
+            this.lbl_members.Text = "Ellaine Rose Balatbat\r\nSamantha Faith Tan\r\nLenar Andrei Yolola\r\n";
+            this.lbl_members.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.BackColor = System.Drawing.Color.Maroon;
+            this.ExitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ExitBtn.Font = new System.Drawing.Font("Segoe UI Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.ForeColor = System.Drawing.Color.White;
+            this.ExitBtn.Location = new System.Drawing.Point(1393, 3);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(39, 33);
+            this.ExitBtn.TabIndex = 36;
+            this.ExitBtn.Text = "X";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(49, 581);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 28);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Not registered yet?";
+            // 
+            // btn_Signup
+            // 
+            this.btn_Signup.AutoSize = true;
+            this.btn_Signup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Signup.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Signup.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Signup.Location = new System.Drawing.Point(226, 581);
+            this.btn_Signup.Name = "btn_Signup";
+            this.btn_Signup.Size = new System.Drawing.Size(175, 28);
+            this.btn_Signup.TabIndex = 38;
+            this.btn_Signup.Text = "Create an account";
+            this.btn_Signup.Click += new System.EventHandler(this.btn_Signup_Click);
+            // 
+            // btn_showpassword
+            // 
+            this.btn_showpassword.FlatAppearance.BorderSize = 0;
+            this.btn_showpassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_showpassword.Image = global::Library_Management_System__Final_Project_.Properties.Resources.icons8_show_24;
+            this.btn_showpassword.Location = new System.Drawing.Point(565, 441);
+            this.btn_showpassword.Name = "btn_showpassword";
+            this.btn_showpassword.Size = new System.Drawing.Size(47, 36);
+            this.btn_showpassword.TabIndex = 39;
+            this.btn_showpassword.UseVisualStyleBackColor = true;
+            this.btn_showpassword.Click += new System.EventHandler(this.btn_showpassword_Click);
             // 
             // pb_logo1
             // 
             this.pb_logo1.BackColor = System.Drawing.Color.Maroon;
             this.pb_logo1.Image = global::Library_Management_System__Final_Project_.Properties.Resources.logo_no_background1;
-            this.pb_logo1.Location = new System.Drawing.Point(1051, 60);
+            this.pb_logo1.Location = new System.Drawing.Point(1065, 60);
             this.pb_logo1.Name = "pb_logo1";
             this.pb_logo1.Size = new System.Drawing.Size(296, 66);
             this.pb_logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,7 +192,7 @@
             // 
             this.pb_image.BackColor = System.Drawing.Color.Maroon;
             this.pb_image.Image = global::Library_Management_System__Final_Project_.Properties.Resources.Untitled_design__1_;
-            this.pb_image.Location = new System.Drawing.Point(1070, 266);
+            this.pb_image.Location = new System.Drawing.Point(1084, 266);
             this.pb_image.Name = "pb_image";
             this.pb_image.Size = new System.Drawing.Size(268, 251);
             this.pb_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,18 +202,37 @@
             // pb_redrectangle
             // 
             this.pb_redrectangle.BackColor = System.Drawing.Color.Maroon;
-            this.pb_redrectangle.Location = new System.Drawing.Point(962, -13);
+            this.pb_redrectangle.Location = new System.Drawing.Point(976, -13);
             this.pb_redrectangle.Name = "pb_redrectangle";
             this.pb_redrectangle.Size = new System.Drawing.Size(464, 973);
             this.pb_redrectangle.TabIndex = 9;
             this.pb_redrectangle.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Maroon;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1159, 611);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 28);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "MADE BY:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // form_LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1422, 853);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_showpassword);
+            this.Controls.Add(this.btn_Signup);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.pb_logo1);
             this.Controls.Add(this.lbl_members);
             this.Controls.Add(this.pb_image);
@@ -166,11 +243,10 @@
             this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.lbl_Login);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "form_LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
-            this.Load += new System.EventHandler(this.form_LogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_redrectangle)).EndInit();
@@ -191,6 +267,11 @@
         private System.Windows.Forms.PictureBox pb_redrectangle;
         private System.Windows.Forms.PictureBox pb_image;
         private System.Windows.Forms.Label lbl_members;
+        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label btn_Signup;
+        private System.Windows.Forms.Button btn_showpassword;
+        private System.Windows.Forms.Label label2;
     }
 }
 

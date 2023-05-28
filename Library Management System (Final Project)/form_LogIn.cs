@@ -21,11 +21,6 @@ namespace Library_Management_System__Final_Project_
             Persist Security Info=False;";
         }
 
-        private void form_LogIn_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_login_Click(object sender, EventArgs e)
         {
             try
@@ -59,6 +54,50 @@ namespace Library_Management_System__Final_Project_
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult IExit;
+            IExit = MessageBox.Show("Are you sure you want to exit", "Leaving So Soon?", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (IExit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btn_Signup_Click(object sender, EventArgs e)
+        {
+           form_Signup form_Signup = new form_Signup();
+            form_Signup.ShowDialog();
+            this.Hide();
+        }
+
+        private void btn_showpassword_Click(object sender, EventArgs e)
+        {
+            if (tb_password.UseSystemPasswordChar == true)
+            {
+                btn_showpassword.Image = Library_Management_System__Final_Project_.Properties.Resources.icons8_hide_24;
+                tb_password.UseSystemPasswordChar = false;
+            }
+            else if (tb_password.UseSystemPasswordChar == false)
+            {
+                btn_showpassword.Image = Library_Management_System__Final_Project_.Properties.Resources.icons8_show_24;
+                tb_password.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void btn_login_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void tb_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_login_Click(this, new EventArgs());
             }
         }
     }
