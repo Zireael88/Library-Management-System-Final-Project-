@@ -47,31 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BooksDatabaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BooksDatabaseDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BooksDatabaseDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BooksDatabaseDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BooksDatabaseDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BooksDatabaseDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BooksDatabaseDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BooksDatabaseDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BooksDatabaseDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BooksDatabaseDataSet4.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form_Borrow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,11 +77,6 @@
     <Compile Include="HomepageBookList.Designer.cs">
       <DependentUpon>HomepageBookList.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UC_BookLists.cs">
@@ -126,12 +96,6 @@
     </Compile>
     <Compile Include="UC_BooksLost.Designer.cs">
       <DependentUpon>UC_BooksLost.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC_BooksReturned.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_BooksReturned.Designer.cs">
-      <DependentUpon>UC_BooksReturned.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form_Borrow.resx">
       <DependentUpon>Form_Borrow.cs</DependentUpon>
@@ -167,75 +131,6 @@
     <EmbeddedResource Include="UC_BooksLost.resx">
       <DependentUpon>UC_BooksLost.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_BooksReturned.resx">
-      <DependentUpon>UC_BooksReturned.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="BooksDatabaseDataSet.xsc">
-      <DependentUpon>BooksDatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BooksDatabaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BooksDatabaseDataSet.xss">
-      <DependentUpon>BooksDatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet1.xsc">
-      <DependentUpon>BooksDatabaseDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BooksDatabaseDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BooksDatabaseDataSet1.xss">
-      <DependentUpon>BooksDatabaseDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet2.xsc">
-      <DependentUpon>BooksDatabaseDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BooksDatabaseDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BooksDatabaseDataSet2.xss">
-      <DependentUpon>BooksDatabaseDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet3.xsc">
-      <DependentUpon>BooksDatabaseDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BooksDatabaseDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BooksDatabaseDataSet3.xss">
-      <DependentUpon>BooksDatabaseDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet4.xsc">
-      <DependentUpon>BooksDatabaseDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="BooksDatabaseDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BooksDatabaseDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BooksDatabaseDataSet4.xss">
-      <DependentUpon>BooksDatabaseDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="LoginDBDataSet.xsc">
-      <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LoginDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LoginDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LoginDBDataSet.xss">
-      <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

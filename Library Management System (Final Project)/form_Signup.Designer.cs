@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_Signup));
             this.ExitBtn = new System.Windows.Forms.Button();
             this.pb_logo1 = new System.Windows.Forms.PictureBox();
             this.pb_image = new System.Windows.Forms.PictureBox();
@@ -44,6 +45,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_members = new System.Windows.Forms.Label();
+            this.btn_showpassword = new System.Windows.Forms.Button();
+            this.btn_confirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_redrectangle)).BeginInit();
@@ -229,12 +232,40 @@
             this.lbl_members.Text = "Ellaine Rose Balatbat\r\nSamantha Faith Tan\r\nLenar Andrei Yolola\r\n";
             this.lbl_members.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_showpassword
+            // 
+            this.btn_showpassword.FlatAppearance.BorderSize = 0;
+            this.btn_showpassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_showpassword.Image = global::Library_Management_System__Final_Project_.Properties.Resources.icons8_show_24;
+            this.btn_showpassword.Location = new System.Drawing.Point(549, 418);
+            this.btn_showpassword.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_showpassword.Name = "btn_showpassword";
+            this.btn_showpassword.Size = new System.Drawing.Size(48, 36);
+            this.btn_showpassword.TabIndex = 55;
+            this.btn_showpassword.UseVisualStyleBackColor = true;
+            this.btn_showpassword.Click += new System.EventHandler(this.btn_showpassword_Click);
+            // 
+            // btn_confirm
+            // 
+            this.btn_confirm.FlatAppearance.BorderSize = 0;
+            this.btn_confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_confirm.Image = global::Library_Management_System__Final_Project_.Properties.Resources.icons8_show_24;
+            this.btn_confirm.Location = new System.Drawing.Point(549, 544);
+            this.btn_confirm.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_confirm.Name = "btn_confirm";
+            this.btn_confirm.Size = new System.Drawing.Size(48, 36);
+            this.btn_confirm.TabIndex = 56;
+            this.btn_confirm.UseVisualStyleBackColor = true;
+            this.btn_confirm.Click += new System.EventHandler(this.btn_confirm_Click);
+            // 
             // form_Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.Controls.Add(this.btn_confirm);
+            this.Controls.Add(this.btn_showpassword);
             this.Controls.Add(this.lbl_members);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Login);
@@ -252,6 +283,7 @@
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.lbl_Signup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "form_Signup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "form_Signup";
@@ -281,5 +313,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_members;
+        private System.Windows.Forms.Button btn_showpassword;
+        private System.Windows.Forms.Button btn_confirm;
     }
 }

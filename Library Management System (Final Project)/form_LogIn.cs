@@ -13,11 +13,12 @@ namespace Library_Management_System__Final_Project_
 {
     public partial class form_LogIn : Form
     {
+
         private OleDbConnection conn = new OleDbConnection();
         public form_LogIn()
         {
             InitializeComponent();
-            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\saman\source\repos\Library Management System (Final Project)\LoginDB.accdb;
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\saman\Documents\BooksDatabase.accdb;
             Persist Security Info=False;";
         }
 
@@ -70,8 +71,9 @@ namespace Library_Management_System__Final_Project_
         private void btn_Signup_Click(object sender, EventArgs e)
         {
            form_Signup form_Signup = new form_Signup();
-            form_Signup.ShowDialog();
             this.Hide();
+            form_Signup.ShowDialog();
+            
         }
 
         private void btn_showpassword_Click(object sender, EventArgs e)

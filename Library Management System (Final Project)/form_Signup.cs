@@ -13,11 +13,12 @@ namespace Library_Management_System__Final_Project_
 {
     public partial class form_Signup : Form
     {
+
         private OleDbConnection conn = new OleDbConnection();
         public form_Signup()
         {
             InitializeComponent();
-            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\saman\source\repos\Library Management System (Final Project)\LoginDB.accdb;
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\saman\Documents\BooksDatabase.accdb;
             Persist Security Info=False;";
         }
 
@@ -46,8 +47,9 @@ namespace Library_Management_System__Final_Project_
                     conn.Close();
 
                     form_LogIn form_LogIn = new form_LogIn();
-                    form_LogIn.ShowDialog();
                     this.Hide();
+                    form_LogIn.ShowDialog();
+                    
                 }
                 else 
                 {
@@ -65,8 +67,37 @@ namespace Library_Management_System__Final_Project_
         private void lbl_Login_Click(object sender, EventArgs e)
         {
             form_LogIn form_LogIn = new form_LogIn();
-            form_LogIn.ShowDialog();
             this.Hide();
+            form_LogIn.ShowDialog();
+            
+        }
+
+        private void btn_showpassword_Click(object sender, EventArgs e)
+        {
+            if (tb_password.UseSystemPasswordChar == true)
+            {
+                btn_showpassword.Image = Library_Management_System__Final_Project_.Properties.Resources.icons8_hide_24;
+                tb_password.UseSystemPasswordChar = false;
+            }
+            else if (tb_password.UseSystemPasswordChar == false)
+            {
+                btn_showpassword.Image = Library_Management_System__Final_Project_.Properties.Resources.icons8_show_24;
+                tb_password.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void btn_confirm_Click(object sender, EventArgs e)
+        {
+            if (tb_confirmpassword.UseSystemPasswordChar == true)
+            {
+                btn_confirm.Image = Library_Management_System__Final_Project_.Properties.Resources.icons8_hide_24;
+                tb_confirmpassword.UseSystemPasswordChar = false;
+            }
+            else if (tb_confirmpassword.UseSystemPasswordChar == false)
+            {
+                btn_confirm.Image = Library_Management_System__Final_Project_.Properties.Resources.icons8_show_24;
+                tb_confirmpassword.UseSystemPasswordChar = true;
+            }
         }
     }
 }
